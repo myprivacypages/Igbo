@@ -132,6 +132,7 @@
   </header>
 
   <div class="container">
+
     <!-- 1. Introduction -->
     <div class="card policy-card p-3">
       <div class="card-body">
@@ -141,12 +142,13 @@
         <p>By using this application, you agree to the terms described in this policy.</p>
       </div>
     </div>
+
     <!-- 2. Information We Collect -->
     <div class="card policy-card p-3">
       <div class="card-body">
         <h5>2. Information We Collect</h5>
         <p><span class="check-icon">✅</span>We Do NOT Collect Personal Information</p>
-        <p>Igbo Market Affairs does not collect, store, transmit, or share any personal information, including:</p>
+        <p>Igbo Market Affairs does not collect, store, transmit, or share any personal information, including but not limited to:</p>
         <ul>
           <li>Name</li>
           <li>Email address</li>
@@ -160,7 +162,8 @@
         <p>The app works completely offline and does not require user registration or account creation.</p>
       </div>
     </div>
-    <!-- Additional sections remain unchanged -->
+
+    <!-- 3. Information Stored on Your Device -->
     <div class="card policy-card p-3">
       <div class="card-body">
         <h5>3. Information Stored on Your Device</h5>
@@ -181,7 +184,86 @@
         <p>If you clear the app’s data or uninstall the application, all stored preferences are permanently deleted.</p>
       </div>
     </div>
-    <!-- Remaining sections like 4-10 omitted for brevity, same as previous example -->
+
+    <!-- 4. Internet Access -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>4. Internet Access</h5>
+        <p>Igbo Market Affairs does not require an internet connection for its core functionality.</p>
+        <p>If internet permission exists, it may only be used for:</p>
+        <ul>
+          <li>Future feature updates</li>
+          <li>Optional external links (if introduced in later versions)</li>
+        </ul>
+        <p>We do not track, monitor, or analyze user behavior.</p>
+      </div>
+    </div>
+
+    <!-- 5. Data Sharing and Third Parties -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>5. Data Sharing and Third Parties</h5>
+        <p>We do not:</p>
+        <ul>
+          <li>Sell user data</li>
+          <li>Share user data</li>
+          <li>Transfer user data</li>
+          <li>Use third-party analytics tools</li>
+          <li>Use advertising SDKs</li>
+          <li>Integrate tracking technologies</li>
+        </ul>
+        <p>Your information remains fully private on your device.</p>
+      </div>
+    </div>
+
+    <!-- 6. Children’s Privacy -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>6. Children’s Privacy</h5>
+        <p>Igbo Market Affairs does not knowingly collect personal information from children under the age of 13.</p>
+        <p>Since no personal data is collected, the application is safe for general audiences.</p>
+      </div>
+    </div>
+
+    <!-- 7. Data Security -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>7. Data Security</h5>
+        <p>All information remains stored locally on your device.</p>
+        <p>We rely on Android’s secure storage mechanisms to safeguard locally stored preferences.</p>
+        <p>While we implement reasonable security practices, no digital system can be guaranteed to be 100% secure.</p>
+      </div>
+    </div>
+
+    <!-- 8. Your Rights -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>8. Your Rights</h5>
+        <p>Because we do not collect or store personal data:</p>
+        <ul>
+          <li>There is no personal data to access, modify, or delete.</li>
+          <li>You may delete all stored preferences by clearing app data or uninstalling the app.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 9. Changes to This Privacy Policy -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>9. Changes to This Privacy Policy</h5>
+        <p>We may update this Privacy Policy if the application’s features change.</p>
+        <p>Any updates will be reflected inside the app and/or in the app’s listing on the Google Play Store.</p>
+      </div>
+    </div>
+
+    <!-- 10. Contact Us -->
+    <div class="card policy-card p-3">
+      <div class="card-body">
+        <h5>10. Contact Us</h5>
+        <p>If you have any questions regarding this Privacy Policy, please contact:</p>
+        <p>📧 <a href="mailto:affairsofnaijamedialimited@gmail.com">affairsofnaijamedialimited@gmail.com</a></p>
+      </div>
+    </div>
 
   </div>
 
@@ -215,7 +297,7 @@
 
     toggleBtn.addEventListener('click', () => {
       toggleBtn.classList.add('bounce');
-      setTimeout(() => toggleBtn.classList.remove('bounce'), 400); // Remove bounce after animation
+      setTimeout(() => toggleBtn.classList.remove('bounce'), 400);
       if(body.classList.contains('light-mode')) {
         applyTheme('dark');
         localStorage.setItem('theme', 'dark');
